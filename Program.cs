@@ -44,7 +44,7 @@ Console.WriteLine($"Сумма чисел равна {result}");
 
 // Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
 
-
+/*
 int factorial(int num)
 {
     int count = 1;
@@ -54,7 +54,7 @@ int factorial(int num)
     count *= num;
     num--;
    }
-   return count;*/
+   return count;/*
 
    for(int i = 1; i <= num; i++)
    {
@@ -70,3 +70,35 @@ int number = Convert.ToInt32(Console.ReadLine());
 int result = factorial(number);
 
 Console.WriteLine($"Факториал числа равна {result}");
+*/
+
+// Метод для целочисленного массива.
+
+/*
+int[] CreateRandomArray(int size, int minValue, int maxValue)
+{
+    int[] array = new int[size];
+    for(int index = 0; index < size; index++)
+    array[index] = new Random().Next(minValue, maxValue + 1);
+    return array;
+}
+
+void ShowArray(int[]array)
+{
+    for(int index = 0; index < array.Length; index++)
+    {
+        Console.WriteLine($"Array[{index + 1}] {array[index]}");
+    
+    }
+}
+
+Console.Write("Введите количество элементов: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите мин. значение: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите макс. значение: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = CreateRandomArray(size, min, max);
+ShowArray(myArray);
+*/
